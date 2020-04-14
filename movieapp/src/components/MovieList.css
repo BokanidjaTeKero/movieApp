@@ -1,0 +1,185 @@
+.movie-list-container {
+    background-color: rgba(23, 24, 26, 0.87);
+    padding: 10px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-list-title {
+    color: #ffa000;
+}
+
+.movie-list-no-movie {
+    color:  #009688;
+}
+
+.movie-card {
+    transition: .3s;
+    margin: 10px 10px;
+    color: white;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+.movie-card:hover {
+    background-color: #009688 !important;
+    transform: scale(1.01);
+    color: #ffa000 !important;
+    font-weight: bolder;
+}
+
+.card-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.additional-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imdb-rating {
+    border: 2px solid #ffa000;
+    color: #ffa000;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.card-controls button {
+    margin: 0px 5px;
+}
+
+.card-controls button:active {
+    top: 1px;
+}
+
+.card-content a {
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.movie-item:hover a {
+    color: #ffa000;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 991.98px) {
+
+    .movie-list-container {
+        padding: 5px;
+    }
+
+    .movie-list-title {
+        font-size: 30px;
+    }
+
+    .movie-card {
+        font-size: 12px;
+    }
+
+    .card-content{
+        padding: 15px!important;
+    }
+
+    .card-title {
+        font-size: 16px!important;
+    }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+
+    .movie-list-container {
+        padding: 2px;
+        width: 90%;
+    }
+
+    .movie-list-title {
+        font-size: 25px;
+    }
+
+    .movie-card {
+        font-size: 11px;
+    }
+
+    .card-content{
+        padding: 10px!important;
+    }
+
+    .card-title {
+        font-size: 15px!important;
+    }
+
+    .imdb-rating {
+        border: none;
+        color: #ffa000;
+        padding: 5px;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 3px;
+        font-weight: bolder;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .movie-list-container {
+        padding: 1px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .movie-list-title {
+        font-size: 20px;
+    }
+
+    .movie-card {
+        font-size: 10px;
+    }
+
+    .card-content{
+        padding: 5px!important;
+    }
+
+    .card-action {
+        padding: 4px 2px 6px 2px!important;
+        height: 30px!important;
+    }
+
+    .card-title {
+        font-size: 14px!important;
+    }
+
+    .imdb-rating {
+        border: none;
+        color: #ffa000;
+        padding: 2px;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 4px;
+        font-weight: bolder;
+    }
+
+    .btn-btn {
+        margin: 0px 2px;
+        padding: 2px;
+        padding-bottom: 6px;
+        padding-top: 0px;
+        height: 25px;
+    }
+}

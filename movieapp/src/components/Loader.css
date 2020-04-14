@@ -1,0 +1,32 @@
+
+.loader {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 40%;
+    margin: 0 auto;
+    z-index: 1000;
+    background-color: rgba(23, 24, 26, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-content {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/filmTrack.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.show-loader {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+    .loader {
+        left: 20%; 
+    }
+}

@@ -1,0 +1,164 @@
+
+.movie-page-container {
+    background-color: rgba(23, 24, 26, 0.87);
+    color: #ffa000;
+    padding: 50px;
+}
+
+.about-movie-people {
+    margin-top: 50px;
+}
+
+.movie-page-container span {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bolder;  
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.released {
+    background-image: url('../assets/icons/calendar.png');
+}
+
+.genre {
+    background-image: url('../assets/icons/cinema.png');
+}
+
+.runtime {
+    background-image: url('../assets/icons/clock.png');
+}
+
+.imdbRating {
+    background-image: url('../assets/icons/imdb.png');
+}
+
+.awards {
+    background-image: url('../assets/icons/award.png');
+}
+
+.plot {
+    background-image: url('../assets/icons/info.png');
+}
+
+.language {
+    background-image: url('../assets/icons/subject.png');
+}
+
+.country {
+    background-image: url('../assets/icons/world.png');
+}
+
+.boxOffice {
+    background-image: url('../assets/icons/money.png');
+}
+
+.director {
+    background-image: url('../assets/icons/director.png');
+}
+
+.actors {
+    background-image: url('../assets/icons/team.png');
+}
+
+.writer {
+    background-image: url('../assets/icons/writer.png');
+}
+
+.production {
+    background-image: url('../assets/icons/video-editing.png');
+}
+
+
+
+.tooltip {
+    position: relative;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 102%;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media (max-width: 850px) and (min-width: 601px) {
+    .movie-page-container {
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .movie-page-container span {
+        display: inline-block;
+        width: 60%;  
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .movie-page-container {
+        padding: 5px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .movie-page-container span {
+        display: inline-block;
+        width: 90%;  
+    }
+    
+    .movie-baseData h1 {
+        font-size: 30px;
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        left: 20%;
+        visibility: visible;
+    }
+      
+    .tooltip .tooltiptext::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: -10px; 
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent black transparent transparent;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .movie-page-container {
+        width: 100%!important;
+        padding: 2px;
+    }
+}

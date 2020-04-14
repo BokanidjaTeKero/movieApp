@@ -1,0 +1,30 @@
+
+.next-page-loader {
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color:  #ffa000;
+    z-index: 1000;
+    background-color:  #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-page-loader-content {
+    width: 150px;
+    height: 150px;
+    background-image: url('../assets/logo.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.show-next-page-loader {
+    visibility: visible;
+}
+
