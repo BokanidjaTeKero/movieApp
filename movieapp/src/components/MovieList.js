@@ -38,13 +38,11 @@ class MovieList extends Component {
                             </div>
                             <div className="card-action card-controls">
                                 <button onClick={ () => deleteMovie( movie ) } className=" btn-small waves-effect waves-light red btn-btn">
-                                    <span className='hide-on-small-only left'>DELETE</span>
                                     <i className="material-icons btn-icon">delete_forever</i>
                                 </button>
                                 { otherControls && 
                                     <div className='additional-controls'>
                                         <button onClick={ () => addToToWached( movie, movies ) } className=" btn-small waves-effect waves-light green btn-btn">
-                                            <span className='hide-on-small-only left'>WACHED</span>
                                             <i className="material-icons btn-icon">visibility_off</i>
                                         </button>
                                         <div>
